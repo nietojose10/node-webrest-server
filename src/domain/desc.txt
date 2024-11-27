@@ -1,0 +1,2 @@
+1.-Something important to highlight is that in domain we do not have any external library
+2.-We will have pure code of the language that we are using.

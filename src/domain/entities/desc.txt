@@ -1,0 +1,1 @@
+1.-Entities are files very similar to what we will have in the db but it is not the same.
