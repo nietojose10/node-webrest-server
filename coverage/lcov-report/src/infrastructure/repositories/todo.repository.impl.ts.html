@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">73.33% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>22/30</span>
+                <span class='fraction'>30/30</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">33.33% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/6</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">73.33% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>22/30</span>
+                <span class='fraction'>30/30</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -102,24 +102,24 @@
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">import { CreateTodoDto, TodoDatasource, TodoEntity, TodoRepository, UpdateTodoDto } from "../../domain";
 &nbsp;
@@ -130,25 +130,25 @@ export class TodoRepositoryImpl implements TodoRepository {
         private readonly datasource: TodoDatasource
     ){}
 &nbsp;
-<span class="fstat-no" title="function not covered" >    create( createTodoDto: CreateTodoDto ): Promise&lt;TodoEntity&gt; {</span>
-<span class="cstat-no" title="statement not covered" >        return this.datasource.create( createTodoDto );</span>
-<span class="cstat-no" title="statement not covered" >    }</span>
+    create( createTodoDto: CreateTodoDto ): Promise&lt;TodoEntity&gt; {
+        return this.datasource.create( createTodoDto );
+    }
     
     getAll(): Promise&lt;TodoEntity[]&gt; {
         return this.datasource.getAll();
     }
 &nbsp;
-<span class="fstat-no" title="function not covered" >    findById( id: number ): Promise&lt;TodoEntity&gt; {</span>
-<span class="cstat-no" title="statement not covered" >        return this.datasource.findById(id);</span>
-<span class="cstat-no" title="statement not covered" >    }</span>
+    findById( id: number ): Promise&lt;TodoEntity&gt; {
+        return this.datasource.findById(id);
+    }
 &nbsp;
-<span class="fstat-no" title="function not covered" >    updateById( updateTodoDto: UpdateTodoDto ): Promise&lt;TodoEntity&gt; {</span>
-<span class="cstat-no" title="statement not covered" >        return this.datasource.updateById( updateTodoDto );</span>
-<span class="cstat-no" title="statement not covered" >    }</span>
+    updateById( updateTodoDto: UpdateTodoDto ): Promise&lt;TodoEntity&gt; {
+        return this.datasource.updateById( updateTodoDto );
+    }
     
-<span class="fstat-no" title="function not covered" >    deleteById( id: number ): Promise&lt;TodoEntity&gt; {</span>
-<span class="cstat-no" title="statement not covered" >        return this.datasource.deleteById( id );</span>
-<span class="cstat-no" title="statement not covered" >    }</span>
+    deleteById( id: number ): Promise&lt;TodoEntity&gt; {
+        return this.datasource.deleteById( id );
+    }
 &nbsp;
 }</pre></td></tr></table></pre>
 
@@ -157,7 +157,7 @@ export class TodoRepositoryImpl implements TodoRepository {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-11-27T01:19:57.523Z
+                at 2024-11-28T01:21:57.905Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>
